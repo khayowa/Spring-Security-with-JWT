@@ -22,6 +22,7 @@ public class UserserviceApplication {
     PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
+
     @Bean
     CommandLineRunner commandLineRunner(AppUserService appUserService){
         return args -> {
